@@ -1,0 +1,31 @@
+.container {
+    width: 500px;
+    // background-image: url('/assets/header.png');
+    // background-repeat: no-repeat;
+    // background-size: auto;
+    background: #422912;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    .title {
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    .noti {
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        img {
+            width: 30px;
+            height: 35px;
+        }
+    }
+}

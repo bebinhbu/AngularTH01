@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="coffee">
+        <img src="assets/coffee-nut.png" alt="" *ngIf="menu1 === false" (click) = "active1()">
+        <img src="assets/coffee-nut-color.png" alt="" *ngIf="menu1 === true">
+    </div>
+    <div class="order">
+        <img src="assets/order.png" alt="" (click) = "active2()" *ngIf="menu2 === false">
+        <img src="assets/order-color.png" alt="" *ngIf="menu2 === true">
+    </div>
+    <div class="user">
+        <img src="assets/user.png" alt="" *ngIf="menu3 === false" (click) = "active3()">
+        <img src="assets/user-color.png" alt="" *ngIf="menu3 === true">
+    </div>
+</div>

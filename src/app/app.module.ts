@@ -3,16 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FoodComponent } from './food/food.component';
+import { HeaderComponent } from './header/header.component';
+import { MenuBarComponent } from './menu-bar/menu-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FoodComponent
+    FoodComponent,
+    HeaderComponent,
+    MenuBarComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [FoodComponent,AppComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
