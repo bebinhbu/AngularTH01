@@ -15,6 +15,9 @@ export class StatusPipe implements PipeTransform {
         case 1:
           result = 'Serving';
           break;
+        case 2:
+          result = "Serviced";
+          break;
     }
     return result;
   }

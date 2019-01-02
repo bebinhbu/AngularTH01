@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularTH01';
-  abc :string = 'abc';
+  abc :string = 'table';
 }

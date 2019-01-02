@@ -1,0 +1,70 @@
+.wrapper {
+    background: brown;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    box-shadow: 1px 2px 3px black;
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title {
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+        .nameCustomer {
+            background: #422912;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 100px;
+        }
+    }
+    .row1
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .status {
+            padding: 10px 30px;
+            background: yellow;
+            border: none;
+            margin-right: -20px;
+            color: brown;
+        }
+    }
+}
+.wrapperWhite {
+    background: white;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 5px 0;
+    box-shadow: 1px 2px 3px black;
+    .rowWhite {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .titleWhite {
+            color: #422912;
+            text-transform: uppercase;
+        }
+        .statusWhite {
+            color: orangered;
+            font-size: 15px;
+        }
+    }
+    .center {
+        text-align: center;
+        button{
+            background: #422912;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 18px;
+            border-radius: 100px;
+        }
+    }
+}

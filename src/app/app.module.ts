@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { MenuBottomComponent } from './menu-bottom/menu-bottom.component';
 import { StatusPipe } from './pipes/status.pipe';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { StatusPipe } from './pipes/status.pipe';
     HeaderComponent,
     MenuBarComponent,
     MenuBottomComponent,
-    StatusPipe
+    StatusPipe,
+    TableComponent
   ],
   imports: [
     BrowserModule
