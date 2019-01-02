@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-food',
@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./food.component.scss']
 })
 export class FoodComponent {
+  title: number = 1;
+  @Input() destination: string = '';
 }

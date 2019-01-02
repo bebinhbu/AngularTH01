@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu-bar.component.scss']
 })
 export class MenuBarComponent {
-  menu1:boolean ;
-  menu2:boolean ;
-  menu3:boolean ;
+  menu1: boolean ;
+  menu2: boolean ;
+  menu3: boolean ;
   constructor()
   {
     this.menu1 = this.menu2 = this.menu3 = false;
