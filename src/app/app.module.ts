@@ -7,7 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { MenuBottomComponent } from './menu-bottom/menu-bottom.component';
 import { StatusPipe } from './pipes/status.pipe';
-import { TableComponent } from './table/table.component';
+import { TableContainerComponent } from './table-container/table-container.component';
+import { TableComponent } from './table-container/table/table.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TableComponent } from './table/table.component';
     MenuBarComponent,
     MenuBottomComponent,
     StatusPipe,
+    TableContainerComponent,
     TableComponent
   ],
   imports: [
