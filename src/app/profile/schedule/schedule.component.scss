@@ -1,0 +1,27 @@
+.container {
+    padding: 5px 20px;
+    .notWork {
+        background-color: rgb(102, 68, 53);;
+    }
+    .worked {
+        background-color:#582e004f;
+    }
+    .working {
+        background: green;
+    }
+    span {
+        color: white;
+        font-size: 15px;
+        padding: 6px 15px;
+        border-radius:6px;
+        margin:10px 10px;
+        display: inline-block;
+    }
+    p {
+        margin: 15px 0 4px 0;
+        color: rgb(102, 68, 53);
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-size:13px;
+      }
+}

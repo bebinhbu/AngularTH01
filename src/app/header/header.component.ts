@@ -1,19 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { TableService } from '../services/table.service';
 
 @Component({
   selector: 'app-header',
-  template: `
-  <div class="container">
-    <div class="title">
-        {{ title }}
-    </div>
-    <div class="noti">
-        <img src="assets/noti.png" alt="">
-    </div>
-  </div>
-  `,
+  templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
-  title:string = "table";
+export class HeaderComponent implements OnInit {
+  title: String = 'MENU';
+
+
+  @Output() onAdd: EventEmitter<Boolean> = new EventEmitter()
+
+  constructor(private tableSvc: TableService) {
+
+  }
+
+  ngOnInit() {
+    this.tableSvc.currentTable.subscribe(newTitle => {
+      this.title = newTitle;
+      this.title = newTitle || 'Table'
+    })
+  }
+  add() {
+    //this.onAdd.emit(true)
+    this.tableSvc.addTable();
+  }
 }

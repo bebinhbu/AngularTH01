@@ -1,8 +1,0 @@
-<div class="categorie-bar">
-    <div class="categorie-item" *ngFor="let categorie of categories" (click)="onTapMenu(categorie)" [ngClass]="{'active' : categorie.active}">
-      <img *ngIf="!categorie.active" src="assets/{{categorie.icon}}" alt="">
-      <img *ngIf="categorie.active" src="assets/{{categorie.iconActive}}" alt="">
-      <p>{{categorie.name}}</p>
-    </div>
-  </div>
-<app-food *ngFor="let menu of menus" [menu]="menu"></app-food>

@@ -1,30 +1,10 @@
-.container {
-     // background-image: url('/assets/header.png');
-    // background-repeat: no-repeat;
-    // background-size: auto;
-    background: #422912;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    position: relative;
-    .title {
-        color: white;
-        font-weight: bold;
-        font-size: 30px;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-    }
-    .noti {
-        position: absolute;
-        top: 30px;
-        right: 50px;
-        img {
-            width: 30px;
-            height: 35px;
-        }
-    }
+.header {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #422912;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size:20px;
 }

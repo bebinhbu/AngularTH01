@@ -1,0 +1,19 @@
+<div class="custom-header">
+    <span>Display</span>
+    <div class="btn-group">
+      <button (click)="onDisplayModeChange(0)" [ngClass]="{active: displayMode === 1}">
+        <img src="../assets/grid.png" alt="">
+      </button>
+      <button (click)="onDisplayModeChange(1)" [ngClass]="{active: displayMode === 2}">
+        <img src="../assets/list.png" alt="">
+      </button>
+    </div>
+  </div>
+  <div class="body">
+    <div class="container" [ngClass]="{'grid': displayMode === 0, 'list': displayMode === 1}">
+      <div class="row">
+        <app-table *ngFor="let table of tables" [table]="table" [ngClass]="{'col-6': displayMode === 0, 'col-12': displayMode === 1}"></app-table>
+      </div>
+    </div>
+
+  </div>

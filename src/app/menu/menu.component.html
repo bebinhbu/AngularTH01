@@ -1,0 +1,12 @@
+<div class = "container">
+    <div class="categories-buttons row"> 
+        <button class="col-3"> <img src="../assets/category-1.png">Coffee</button>
+        <button class="col-3"> <img src="../assets/category-2.png">Tea</button>
+        <button class="col-3"> <img src="../assets/category-3.png">Dessert</button>
+        <button class="col-3"> <img src="../assets/category-4.png">Special</button>
+    </div>
+    <br>
+    <div class="row">
+        <app-food *ngFor="let food of foods" [food]="food" (click)="tapOnFood(food)" class="col-12"> </app-food>
+    </div>
+</div>
