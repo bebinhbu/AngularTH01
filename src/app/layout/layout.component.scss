@@ -1,7 +1,6 @@
 html {
     height: 100%;
     min-height: 100%;
-    
   }
 .site {
     margin: 0;
@@ -49,3 +48,55 @@ html {
 //     max-width: 100%;
 // }
 //   }
+
+/* CSS Document */
+
+marquee {
+	margin-top: 5px;
+	width: 100%;
+}
+
+.runtext-container {
+overflow-x: hidden;
+overflow-y: visible;
+}
+
+.main-runtext {margin: 0 auto;
+overflow: visible;
+position: relative;
+height: 40px;
+}
+
+.runtext-container .holder {
+position: relative;
+overflow: visible;
+display:inline;
+float:left;
+
+}
+
+.runtext-container .holder .text-container {
+	display:inline;
+}
+
+.runtext-container .holder a{
+	text-decoration: none;
+	font-weight: bold;
+	color:#ff0000;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.25);
+	line-height: -0.5em;
+	font-size:50px;
+}
+
+.runtext-container .holder a:hover{
+	text-decoration: none;
+	color:#6600ff;
+}
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
